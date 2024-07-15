@@ -63,11 +63,7 @@ passwordInput2.style.borderColor = '#890e0e';
 })     
 passwordInput2.addEventListener('blur' , (e)=>{
 passwordInput2.style.borderColor = 'transparent';
-
-})
-//     
-
-//       
+})   
 register.addEventListener('submit' , (e) =>{
 if (passwordInput1.value.trim() !== ''){
 if (passwordInput1.value.length>=8 ){

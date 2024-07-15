@@ -1,14 +1,16 @@
     <link rel="stylesheet" href="../style/css/nav.css">
-
+<?php
+include 'init.php';
+?>
  <!-- start navbar -->
         <nav>
 
             <div class="logo">
                 <div class="logo_img">
-                    <a href="index.php"></a>
+                    <a href="<?=$indexP?>"></a>
                 </div>
                 <h1>
-                <a href="index.php">
+                <a href="<?=$indexP?>">
                     الجيل البرمجي العربي
                 </a>
                 </h1>
@@ -17,11 +19,11 @@
              <!-- بداية ازرار تنقل -->
            <ul>
             <li>
-                <a href="index.php">
+                <a href="<?=$indexP?>">
                 الرئيسة
                 </a>
             </li>
-            <li> <a href="contact_us.php">
+            <li> <a href="<?=$contact?>">
                 اتصال بنا
             </a></li>
            </ul>
@@ -52,21 +54,6 @@
 
 
 
-
-         <style>
-
-::-webkit-scrollbar{
-width: 12px;
-}
-::-webkit-scrollbar-track{
-z-index:-1;
-background: #223a59cc;
-}
-::-webkit-scrollbar-thumb{
-background: #B3D6F955;
-}
-
-         </style>
 
 
 

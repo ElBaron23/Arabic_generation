@@ -1,3 +1,18 @@
+/*
+تعديلا ملف index.css
+-header
+جعلت ال header ياخذ عرض الصفحه كلها
+--------
+-exam
+قمت بعديل ال height تبع كل exambox ليكةن متجاوب مع النص  وقمت باضافه animation  عند ال hover
+--------
+-allsections 
+قمت باضافه padding 60px 0 في جميع الاقسام مع عدا exam جعلته 80 0
+-faq 
+قمت باعاده تعين ال height للعنصر box1 لانه لم يكن متجاوب و span left , right كانو يختفون عند اعاده تعين ال height تبع ال ل box 1 لهذه قمت باعاده style لهم ليكونوا متجاوبين
+END index.css
+
+*/
 * {
   margin: 0;
   padding: 0;
@@ -209,7 +224,7 @@ line-height: 2;
   #apk .text {
 width: 50%;
     height: fit-content !important;
-    background: #223a59cc;
+    background: #223a59;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -801,15 +816,3 @@ display: none !important
 }
 }
 
-
-/*Scroll bar styling*/
-
-::-webkit-scrollbar{
-width: 12px;
-}
-::-webkit-scrollbar-track{
-background: #223a59cc;
-}
-::-webkit-scrollbar-thumb{
-background: #B3D6F955;
-}

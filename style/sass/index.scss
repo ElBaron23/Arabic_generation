@@ -13,7 +13,7 @@ header{
     background-image:url(../../file/image/bg_index.jpg);
     background-size: cover;
     justify-content: center;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
    
@@ -653,4 +653,4 @@ header{
 }
 //end section faq*****************************************
 }
-@import 'footer'
+@import 'footer';
