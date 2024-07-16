@@ -61,8 +61,9 @@ $accountS = 'account_setting.php';
 
 
 // js Files
-$passwordV 	  = '../js/password_verefication.js';
-$toggleClass  = "../js/add_remove_active.js"; 
-$toggleMenu	  ="../js/toggle_btn_nav.js";
+$passwordV 	 = '../js/password_verefication.js';
+$toggleClass = "../js/add_remove_active.js"; 
+$toggleClassProfile  = "../js/add_remove_active_profile.js"; 
+$toggleMenu	 ="../js/toggle_btn_nav.js";
 
 // dont forget ";" <3; END

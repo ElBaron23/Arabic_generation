@@ -25,5 +25,5 @@ include '../inc/init.php';
 </div>
 <script src="<?=$toggleMenu?>">
 </script>
-<script src="<?=$toggleClass?>">
+<script src="<?=$toggleClassProfile?>">
 </script>
