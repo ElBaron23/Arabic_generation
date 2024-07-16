@@ -1,5 +1,5 @@
 <?php 
-include '../inc/init.php'
+include '../inc/init.php';
  ?>
 <div id="navbar">
 <h2>الجيل البرمجي العربي</h2>

@@ -20,7 +20,7 @@ include '../inc/init.php';
 </head>
 <body dir="rtl">
 <?php
-    include '_navbar.php';
+    include $_nav;
 ?>  
 </body>
 </html>
