@@ -40,7 +40,7 @@ $contact2   = 'other/contact.php';
 // php files
 $indexP     = "../index.php";
 $homeP      = "../user/home.php";
-$profileP   = "../user/profile.php";
+$profileP   = "../profile/profile.php";
 $login      = "../log@reg/login.php";
 $logout     = "../log@reg/logout.php";
 $reg        = "../log@reg/register.php";

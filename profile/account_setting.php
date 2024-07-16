@@ -1,6 +1,7 @@
 <?php 
     session_start();
-    include '../inc/init.php';
+include '../inc/init.php';
+
     include $if_not_reg;
      
     $firstname = $_SESSION['data']->firstname;
@@ -15,11 +16,11 @@
     <link rel="stylesheet" href="<?=$profile?>">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الاشعارات</title>
+    <title>اعدادات الحساب</title>
 </head>
 <body dir="rtl">
 <?php
-    include $_nav;
-?> 
+    include '_navbar.php';
+?>  
 </body>
 </html>

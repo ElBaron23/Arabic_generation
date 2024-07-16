@@ -1,7 +1,8 @@
 <?php 
     session_start();
-    include '../inc/init.php';
+include '../inc/init.php';
     include $if_not_reg;
+     
     $firstname = $_SESSION['data']->firstname;
     $lastname  = $_SESSION['data']->lastname;
     $email = $_SESSION['data']->email;
@@ -18,7 +19,7 @@
 <body  dir="rtl">
 <!-- استدعاء ملف الناف بار هنا -->
 <?php
-    include $_nav;
+    include '_navbar.php';
 ?>
 <!-- //هنا حقول تعديل الملف الشخصي -->
 <form  method="post" id="edit_profile2">

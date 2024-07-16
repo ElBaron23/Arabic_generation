@@ -1,26 +1,24 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <?php 
     session_start();
-    include '../inc/init.php';
-    include $if_not_reg;
+    include '../inc/if_not_regi.php';
      
     $firstname = $_SESSION['data']->firstname;
     $lastname  = $_SESSION['data']->lastname;
     $email = $_SESSION['data']->email;
     ?>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="<?=$profile?>">
+    <link rel="stylesheet" href="../style/css/profile.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../file/image/mypic.png" type="image/x-icon">
-    <title><?=$firstname." ". $lastname ?></title>
+    <link rel="shortcut icon" href="../file/image/mypic.png" type="image/x-icon">
+    <title><?php echo  $firstname ." ". $lastname ?></title>
 </head>
 <body dir="rtl">
 <?php
-    include $_nav;
+    include '_navbar.php';
 ?>
 <div class="container">
  <div id="profile">
