@@ -1,44 +1,44 @@
 #navbar{
-    width: 100%;
-    height: 40px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
     background: $mainColor;
+    #nav{
+  width: 100%;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    #nav{
-        width: 100%;
-        height: 40px;
         background: $mainColor;
-        display: flex ;
+    
+        ul{
+          list-style: none;
+      width: 80%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+            li{
+               height: 100%;
+        display: flex;
+        padding: 10px;
         align-items: center;
         justify-content: center;
-        ul{
-            list-style: none;
-            width: 80%;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            li{
-                margin-left: 16px;
-                height: 100%;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
+        text-align: center;
                 a{ 
                     color: $lightColor;
-                    text-decoration: none;
-                    height: 40px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                    transition: all .3s ease;
-                    font-size: 16px;
+                     text-decoration: none;
+          padding: 7px;
+          width: fit-content;
+          display: flex;
+          border-radius: 7px;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          transition: all .3s ease;
+          font-size: 15px; 
                     &:hover{
                         color: $mainColor;
                         background: $lightColor;
@@ -51,11 +51,30 @@
 h2{
     display: none;
 }
+
+.lo , .lo:hover{
+padding: 7px !important;
+background: #f00000 !important;
+color: #fff !important;
+}
 .active{
     color: $mainColor !important; 
     background: $lightColor !important;
 }
 @media screen and (max-width:725px){
+
+          #nav ul li:not(:last-child){
+          border-bottom: 1px solid #f7f7f7;
+          }
+          #navbar #nav ul li a:not(.lo) {
+            color: #f7f7f7;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: all .3s ease;
+            font-size: 16px; }
     h2{
         display: block;
         color: $lightColor;
@@ -65,64 +84,69 @@ h2{
        margin-right: 16px;
     }
 
-    #navbar{
-        width: 100%;
-        height: 40px;
+    #navbar{ width: 100%;
+    height: 60px;
+    background: #223A59;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+align-items: center;
         background: $mainColor;
-        display: flex;
-        justify-content: space-between;
-        // align-items: center;
-        // justify-content: center;
-        position: relative;
         #toggle_btn{
-            margin-left: 16px;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            justify-content: space-around;
-            transition: all .3s ease;
+       margin-left: 16px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      position: relative;
+      justify-content: space-around;
+      transition: all .3s ease;
 
          
           
             span{
-                transition: all .3s ease;
-                width: 40px;
-                height: 4px;
-                border-radius: 4px;
+                       transition: all .3s ease;
+        width: 40px;
+        height: 4px;
+        border-radius: 4px;
                 background: $lightColor;
                 
             }
         }
         #nav{
-            position: absolute;
-            left: 0px;
-            top: 40px;
-            width: 40%;
-            height: 40vh;
+      height: fit-content;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 101.6%;
+      width: 90%;
+      display: none;
+      overflow: hidden;
+      padding: 10px;
+      text-align: center;
+      align-items: center;
+      flex-direction: column;
+      transition: all .3s ease;
+      border-radius: 0 0  12px  12px;
             background: $mainColor;
-            display: none;
-            align-items: center;
-            flex-direction: column;
-            transition: all .3s ease;
-            border-radius: 0  0 12px 0;
             ul{
-                margin-top: 120px;
-                display: flex;
-                list-style: none;
-                flex-direction: column;
-                width: 80%;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+     margin-top: 0;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+box-shadow: none !important;
+background:none !important;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
                 li{
-                    margin-left: 16px;
-                    width:  100%;
-                    height: 40px;
-                    display: flex;
-                    border-bottom: 1px solid $lightColor;
+                 width: 100%;
+        height: fit-content;
+          display: flex;
                     
                     box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
                     a{ 
@@ -160,3 +184,4 @@ h2{
        display: none !important;
         }
 }
+

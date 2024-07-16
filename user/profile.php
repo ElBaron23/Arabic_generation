@@ -1,36 +1,63 @@
-<?php
-include '../inc/init.php';
-?>
+
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="<?=$profile?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الملف الشخصي</title>
-</head>
-<body dir="rtl">
-<?php
+    <?php 
     session_start();
-   include $if_not_reg;
-    include $navbar;
+    include '../inc/init.php';
+    include $if_not_reg;
+     
     $firstname = $_SESSION['data']->firstname;
     $lastname  = $_SESSION['data']->lastname;
     $email = $_SESSION['data']->email;
+    ?>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="<?=$profile?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../file/image/mypic.png" type="image/x-icon">
+    <title><?=$firstname." ". $lastname ?></title>
+</head>
+<body dir="rtl">
+<?php
+    include $_nav;
 ?>
 <div class="container">
-    <div class="user_profile">
-       
-        <div class="name">
-        <h1><?php echo  $firstname ." ". $lastname ?></h1>
-        <h4><?php  echo $email ?></h4>
-        <button type="submit" id="edit_profile">تعديل الملف الشخصي</button>
-        </div>
-        <div id="photo_profile">
-        </div>
-      
-    </div>
-</div>    
+ <div id="profile">
+   <div class="user_profile">
+       <div class="name">
 
+           <h1><?php echo  $firstname ." ". $lastname ?></h1>
+           <h4><?php  echo $email ?></h4>
+
+             <div class="btn">
+              <button type="submit" id="downloaadcv">  تحميل CV</button>
+                <div class="follow">
+                  <img src="../file/icons/star.png" alt="">
+                  <span>45</span>
+                </div>
+
+             </div>
+       </div>
+    <div id="photo_profile">
+  </div>
+</div>
+</div>
+<div class="about">
+    <h4>معلومات اكثر:</h4>
+    
+</div>
+<div class="skills">
+    <h4>المصارات التي تتابعها:</h4>
+<div class="skill">
+   لايوجد مسارات الان
+</div>
+<div class="skills">
+    <h4>اللغات البرمجية التي تتابعها:</h4>
+<div class="skill">
+   لايوجد لغات الان
+</div>
+</div>
+</div>    
 </body>
 </html>

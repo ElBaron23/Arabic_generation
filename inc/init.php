@@ -5,7 +5,6 @@ $home      = "../style/css/home.css";
 $profile   = "../style/css/profile.css";
 $register  = "../style/css/register.css";
 $nav       = "../style/css/nav.css";
-$animation = '../style/css/animation.css';
 $scrollbar = '../style/css/scrollbar.css';
 
 
@@ -21,7 +20,6 @@ $cnx        = "../inc/cnx.php";
 $contact    = '../other/contact.php'; 
 $navIndex   = "../inc/_navIndex.inc";
 $footer     = "../inc/_footer.php";
-
 
 #------------------------------------------
 
@@ -50,8 +48,13 @@ $roadmap 	= '../other/roadmap.php';
 $langs 		= '../other/lang_programing.php';
 $communitie = '../other/communitie.php'; 
 $blogger 	= '../other/blogger.php';
-
-
+$_nav       = "_navbar.php";
+$post 		= "post.php";
+$profileS   = "profile_setting.php";
+$project 	= 'project.php';
+$static 	=  "static.php";
+$notification = 'notification.php';
+$accountS = 'account_setting.php';  
 
 #------------------------------------------
 
